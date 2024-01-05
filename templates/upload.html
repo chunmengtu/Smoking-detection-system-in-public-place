@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeeplabV3+吸烟检测</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #E2E2E2 0%, #C9D6FF 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 50px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #205CEE;
+        }
+        /* Form styling */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+        }
+        /* Input and Button Styling */
+        .file-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: calc(100% - 16px); /* Adjust the width to fit the padding */
+            display: block;
+            transition: border 0.3s;
+        }
+        .file-input:hover,
+        .file-input:focus {
+            border-color: #205CEE;
+        }
+        .button-new {
+            background-color: #205CEE;
+            border: none;
+            padding: 12px 24px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block; /* Make it a block element */
+            margin-top: 10px;
+            width: 100%; /* Make the button span the whole width */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .button-new:hover,
+        .button-new:focus {
+            background-color: #1A4ECC;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1><i class="fas fa-smoking-ban"></i> DeeplabV3+吸烟检测</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" class="file-input"/>
+        <br>
+        <input type="submit" value="上传" class="button-new"/>
+    </form>
+    <footer>
+        © 2024 秦闻强. All rights reserved.
+    </footer>
+</body>
+</html>
